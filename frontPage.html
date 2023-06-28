@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #002366;
+    }
+  
+    .welcome-container {
+      text-align: center;
+      margin-top: 200px;
+    }
+  
+    h1 {
+      font-size: 32px;
+      color: white;
+    }
+  
+    .typewriter {
+      font-size: 18px;
+      color: wheat;
+      margin-bottom: 20px;
+      overflow: hidden; /* Ensures text remains hidden */
+      white-space: nowrap; /* Keeps the text in one line */
+      border-right: 0.15em solid #3498db; /* Creates the typewriter cursor effect */
+      animation: typing 2s steps(40, end), blink-caret 0.5s step-end infinite;
+    }
+  
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+  
+    @keyframes blink-caret {
+      from, to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: #3498db;
+      }
+    }
+  
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+  
+    .btn:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-container">
+    <h1>Welcome to Finovo!</h1>
+    <p class="typewriter">Thank you for visiting. We hope you have a great experience.</p>
+    <br><br><br>
+    <a href="index.html" class="btn">Enter To Continue</a>
+  </div>
+</body>
+</html>
